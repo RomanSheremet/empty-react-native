@@ -9,14 +9,6 @@ export default function HomeBottomTabs() {
     return (
         <BottomTab.Navigator
             initialRouteName={'Menu'}
-            barStyle={{
-                height: '100%',
-                width: 80,
-            }}
-            options={({ route }) => ({
-                tabBarVisible: true,
-            })}
-            tabBarVisible={true}
             tabBarOptions={{
                 labelStyle: {
                     fontSize: scale(8),
@@ -27,24 +19,22 @@ export default function HomeBottomTabs() {
                     justifyContent: 'center',
                     alignItems: 'center',
                     height: 50,
-                    tabBarVisible: true,
                 },
-                height: 50
             }}>
             <BottomTab.Screen
                 name="Login"
                 component={Login}
-                options={{title: 'Первая', headerShown: false}}
+                options={{title: 'Первая'}}
             />
             <BottomTab.Screen
                 name="Login2"
                 component={Login}
-                options={{title: 'Вторая', headerShown: false}}
+                options={{title: 'Вторая'}}
             />
             <BottomTab.Screen
                 name="Login3"
                 component={Login}
-                options={{title: 'Третья', headerShown: false}}
+                options={{title: 'Третья'}}
             />
         </BottomTab.Navigator>
     );

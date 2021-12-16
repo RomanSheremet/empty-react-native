@@ -4,10 +4,15 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 
 import Drawer from './homeDrawer';
+import {FC} from "react";
 
 const Stack = createStackNavigator();
 
-export default function RootStack(navProp) {
+interface IRootStackProps {
+    initialRouteName: string;
+}
+
+export const RootStack:FC<IRootStackProps> = (navProp) => {
   return (
     <NavigationContainer>
       <Stack.Navigator

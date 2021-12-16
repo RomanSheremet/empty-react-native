@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import EvilIcon from 'react-native-vector-icons/EvilIcons';
 
-const DrawerContent = () => {
+const DrawerContent: FC<any> = () => {
   return (
       <View style={styles.mainWrapper}>
         <View style={styles.menuWrapper}>

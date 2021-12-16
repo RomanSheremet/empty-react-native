@@ -18,6 +18,10 @@ const Login = () => {
   );
 };
 
-const styles = ScaledSheet.create({});
+const styles = ScaledSheet.create({
+    wrapper: {
+
+    }
+});
 
 export default Login;
